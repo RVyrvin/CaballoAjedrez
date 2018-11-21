@@ -6,6 +6,14 @@ public class Caballo {
 	private Posicion posicion;
 	
 	
+	public Caballo() {
+		color = color.NEGRO;
+		posicion = new Posicion();
+		posicion.setFila(8);
+		posicion.setColumna('b');
+	}
+	
+	
 	public Color getColor() {
 		return color;
 	}
