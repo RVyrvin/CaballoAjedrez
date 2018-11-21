@@ -6,41 +6,42 @@ public class Posicion {
 	private char columna;	
 	
 	
+	public Posicion () {
+		this.fila = 1;
+		this.columna= 'a';
+	}
+	
+	
 	public Posicion(int fila, char columna) {
 		
-		super();
-		
-		if (fila < 1 || fila > 8)
-			this.fila = fila;
-		else 
-			throw new IllegalArgumentException("La fila teiene ser ente 1 y 8, inclusive");
-		
-		if ( columna < 'a' || columna > 'h')
-			this.columna = columna;
-		else
-			throw new IllegalArgumentException("La columna tiene que ser entre 'a' y 'h', inclusive");
+		this.setFila(fila);
+		this.setColumna(columna);
 	}
+	
 
 	public int getFila() {
 		return fila;
 	}
 	
+	
 	public void setFila(int fila) {
-		if (fila < 1 || fila > 8)
+		if (fila >= 1 && fila <= 8)
 			this.fila = fila;
 		else 
-			throw new IllegalArgumentException("La fila teiene ser ente 1 y 8, inclusive");
+			throw new IllegalArgumentException("ERROR: Fila no válida.");
 	}
+	
 	
 	public char getColumna() {
 		return columna;
 	}
 	
+	
 	public void setColumna(char columna) {
-		if ( columna < 'a' || columna > 'h')
+		if ( columna >= 'a' && columna <= 'h')
 			this.columna = columna;
 		else
-			throw new IllegalArgumentException("La columna tiene que ser entre 'a' y 'h', inclusive");
+			throw new IllegalArgumentException("ERROR: Columna no válida.");
 	}	
 
 }
