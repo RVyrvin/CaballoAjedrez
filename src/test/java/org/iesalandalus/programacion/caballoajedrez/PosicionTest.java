@@ -85,7 +85,7 @@ public class PosicionTest {
 			assertEquals('a', posicion.getColumna());
 		}
 	}
-	/*
+	
 	@Test
 	public void igualdadTest() {
 		Posicion posicion1, posicion2, posicion3, posicion4, posicion5;
@@ -103,11 +103,12 @@ public class PosicionTest {
 		assertEquals(posicion1, posicion5);
 		assertEquals(posicion1, posicion1);
 	}
-	
+	/*
 	@Test
 	public void toStringTest() {
 		Posicion posicion = new Posicion(1, 'a');
 		assertEquals("[fila=1, columna=a]", posicion.toString());
-	}*/
+	}
+	*/
 
 }
