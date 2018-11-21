@@ -80,8 +80,13 @@ public class Posicion {
 		if (fila != other.fila)
 			return false;
 		return true;
+	}
+
+
+	@Override
+	public String toString() {
+		return "[fila=" + fila + ", columna=" + columna + "]";
 	}	
-	
-	
+		
 
 }
