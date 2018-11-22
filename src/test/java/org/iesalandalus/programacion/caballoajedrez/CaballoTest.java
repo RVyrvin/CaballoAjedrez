@@ -78,7 +78,7 @@ public class CaballoTest {
 			assertNull(caballoMalPosicionadoInicialmente);
 		}
 	}
-	/*
+	
 	@Test
 	public void movimientoValidoTest() {
 		Caballo caballoNegroDefecto = new Caballo();
@@ -179,7 +179,7 @@ public class CaballoTest {
 			assertEquals(posicionBlancoG, caballoBlancoG.getPosicion());
 		}
 	}
-	
+	/*
 	@Test
 	public void toStringTest() {
 		Caballo caballo = new Caballo();
