@@ -31,6 +31,29 @@ public class Caballo {
 	}
 	
 	
+	public Caballo (Color color, char columna) {
+		if (color == null)
+			throw new IllegalArgumentException("ERROR: No se puede asignar un color nulo.");	
+		
+		Posicion posicion = new Posicion();
+		
+		if (columna == 'b' || columna == 'g') {	
+			
+			if (color == Color.BLANCO)
+				posicion.setFila(1);
+			if (color == Color.NEGRO)
+				posicion.setFila(8);
+			
+			posicion.setColumna(columna);
+			
+		} else {
+			throw new IllegalArgumentException("ERROR: Columna inicial no válida.");
+		}		
+		
+		this.posicion = posicion;
+	}
+	
+	
 	public Color getColor() {
 		return color;
 	}
