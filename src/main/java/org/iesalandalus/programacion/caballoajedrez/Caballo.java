@@ -210,6 +210,50 @@ public class Caballo {
 		}
 		
 	}
+
+
+	
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + MAX_COLUMNA;
+		result = prime * result + MAX_FILA;
+		result = prime * result + MIN_COLUMNA;
+		result = prime * result + MIN_FILA;
+		result = prime * result + ((color == null) ? 0 : color.hashCode());
+		result = prime * result + ((posicion == null) ? 0 : posicion.hashCode());
+		return result;
+	}
 	
 
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Caballo other = (Caballo) obj;
+		if (MAX_COLUMNA != other.MAX_COLUMNA)
+			return false;
+		if (MAX_FILA != other.MAX_FILA)
+			return false;
+		if (MIN_COLUMNA != other.MIN_COLUMNA)
+			return false;
+		if (MIN_FILA != other.MIN_FILA)
+			return false;
+		if (color != other.color)
+			return false;
+		if (posicion == null) {
+			if (other.posicion != null)
+				return false;
+		} else if (!posicion.equals(other.posicion))
+			return false;
+		return true;
+	}
+	
+	
 }
