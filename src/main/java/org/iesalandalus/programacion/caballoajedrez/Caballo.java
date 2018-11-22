@@ -14,6 +14,23 @@ public class Caballo {
 	}
 	
 	
+	public Caballo(Color color) {
+		if (color == null)
+			throw new IllegalArgumentException("ERROR: No se puede asignar un color nulo.");
+		
+		this.color = color;
+		Posicion posicion = new Posicion();
+		if (this.color == Color.BLANCO) {
+			posicion.setFila(1);
+			posicion.setColumna('b');
+		}else {
+			posicion.setFila(8);
+			posicion.setColumna('b');
+		}
+		this.posicion = posicion;
+	}
+	
+	
 	public Color getColor() {
 		return color;
 	}

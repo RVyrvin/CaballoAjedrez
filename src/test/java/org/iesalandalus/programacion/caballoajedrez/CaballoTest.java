@@ -19,7 +19,7 @@ public class CaballoTest {
 		assertEquals(Color.NEGRO, caballo.getColor());
 		assertEquals(posicionDefectoNegro, caballo.getPosicion());
 	}
-	/*
+	
 	@Test
 	public void constructorUnParametroValidoTest() {
 		Caballo caballoBlanco = new Caballo(Color.BLANCO);
@@ -42,6 +42,7 @@ public class CaballoTest {
 		}
 	}
 	
+	/*
 	@Test
 	public void constructorDosParametrosValidoTest() {
 		Caballo caballoBlancoDefecto = new Caballo(Color.BLANCO, 'b');
